@@ -1,1 +1,1 @@
-int32 slope
+float32 slope
