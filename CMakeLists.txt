@@ -31,15 +31,14 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EnvClfStamped.msg"
   "msg/EnvGeo.msg"
   "msg/EnvGeoStamped.msg"
-  "msg/Plane.msg"
   "msg/Stair.msg"
   "msg/StairStamped.msg"
-  "srv/RecordBag.srv"
-  
+  "msg/StairDetStamped.msg"
+
   DEPENDENCIES 
-    geometry_msgs 
-    std_msgs 
-    # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+  geometry_msgs 
+  std_msgs 
+  # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 
 # uncomment the following section in order to fill in
