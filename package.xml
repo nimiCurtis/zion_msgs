@@ -2,20 +2,25 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>zion_msgs</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="anis@todo.todo">anis</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>Contains messages and services definitions used by the zion nodes</description>
+  <maintainer email="nimicu21@gmail.com">nimrod</maintainer>
+  <license>Apache License 2.0</license>
+	<url type="repository">https://github.com/nimiCurtis/zion_msgs.git</url>
 
+<!-- Declare ROS2 package build tool -->
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
 
+<!-- Declares ROS2 package name that is required at build time -->
   <depend>geometry_msgs</depend>
   <depend>std_msgs</depend>
-
-  <exec_depend>rosidl_default_runtime</exec_depend>
   
+<!-- The content is the name of a dependency group of which the package is a member -->
   <member_of_group>rosidl_interface_packages</member_of_group>
+
+<!-- Declares ROS2 package name that the project need needs at execution-time -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

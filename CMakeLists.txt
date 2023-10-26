@@ -26,11 +26,6 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/EnvClf.msg"
-  "msg/EnvClfGeoStamped.msg"
-  "msg/EnvClfStamped.msg"
-  "msg/EnvGeo.msg"
-  "msg/EnvGeoStamped.msg"
   "msg/Stair.msg"
   "msg/StairStamped.msg"
   "msg/StairDetStamped.msg"
@@ -38,12 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES 
   geometry_msgs 
   std_msgs 
-  # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
-
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
