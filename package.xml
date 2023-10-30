@@ -15,6 +15,7 @@
 <!-- Declares ROS2 package name that is required at build time -->
   <depend>geometry_msgs</depend>
   <depend>std_msgs</depend>
+  <depend>vision_msgs</depend>
   
 <!-- The content is the name of a dependency group of which the package is a member -->
   <member_of_group>rosidl_interface_packages</member_of_group>
@@ -25,6 +26,7 @@
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+<!-- Declares ROS2 package name that is needed as part of some build interface it exports -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>
