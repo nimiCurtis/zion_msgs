@@ -30,7 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Stair.msg"
   "msg/StairStamped.msg"
   "msg/StairDetStamped.msg"
-
+  "srv/GetStair.srv"
+  
   DEPENDENCIES 
   geometry_msgs 
   std_msgs

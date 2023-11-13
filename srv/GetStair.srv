@@ -1,0 +1,9 @@
+string id
+int64 center_x
+int64 center_y
+int64 size_x
+int64 size_y
+---
+Stair stair # stair model
+bool success
+
