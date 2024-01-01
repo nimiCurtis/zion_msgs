@@ -1,18 +1,13 @@
 #goal
-int64 frames_num # number of frames to count
-float64 duration # duration in secs 
-
-# if frames_num=-1 duration!=-1 will depend on duration
-# if frames_num!=-1 duration=-1 will depend on frames_num
-# if frames_num=-1 duration=-1 will record until user interupt
+bool enable # True = start recording | False = stop recording
 
 ---
 
 #result
-bool success # detect finish of recording
+bool success 
 string print # print statement
 
 ---
 
 #feedback
-float64 percentage # amount of duration/frames_num elapsed
+string message # feedback message

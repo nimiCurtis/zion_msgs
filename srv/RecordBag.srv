@@ -1,16 +1,8 @@
 # request
-
-int64 frames_num # number of frames to count
-float64 duration # duration in secs 
-
-# if frames_num=-1 duration!=-1 will depend on duration
-# if frames_num!=-1 duration=-1 will depend on frames_num
-# if frames_num=-1 duration=-1 will record until user interupt
+bool record # True = start recording | False = stop recording
 
 ---
 
 # response
-
-bool success # detect finish of recording
-string print # print statement
-
+bool success
+string message # feedback message
