@@ -1,8 +1,0 @@
-# request
-bool record # True = start recording | False = stop recording
-
----
-
-# response
-bool success
-string message # feedback message
